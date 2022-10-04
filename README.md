@@ -32,13 +32,13 @@ Initialise your view with a value through its corresonding model NutriscoreViewM
 In implementing this View, several principles has been followed:
 * Maximum separation of interest, which implies that there are separate constructs for the View and the ViewModel.
 * View and corresponding ViewModel are saved in a single file.
-* The colours used come from the design guidelines. For the dark mode, these colours have been toned down by 20%.
+* The colours used come from the [design guidelines](https://www.santepubliquefrance.fr/media/files/02-determinants-de-sante/nutrition-et-activite-physique/nutri-score/annexe2-charte-graphique-en). As no RGB-values are published, they have been picked from the guidelines with the Mac Colour Picker. For the dark mode, these colours have been toned down by 10% in the HSB slideer panel.
 * The guidelines do not mention a font, so the standard IOS-font has been used.
+* The word Nutri-Score is officially written as two words capitalised and separated by a dash (so Nutri-Score). For convenience in the code this has been lowercaed and the dash has been removed (so nutriscore).
 
 ## To Be Done
-* Check colour against standard
 * Check the sizes against the standard
-* Variant setup
+* What to do 
 
 ## Ideas
 * Add a vertical presentation option

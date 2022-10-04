@@ -47,7 +47,7 @@ struct NutriscoreView: View {
                     }
                     .overlay(
                         CrossShape()
-                            .stroke(model.nutriscore == .exempt ? .black : .clear, lineWidth: 2.0)
+                            .stroke(model.nutriscore == .unknown ? .black : .clear, lineWidth: 2.0)
                     )
                     
                     // only draw the selected nutriscore if there is a valid nutriscore
@@ -75,6 +75,32 @@ struct NutriscoreView: View {
             } // if submodels
         } // VStack
     }
+}
+
+class NutriscoreViewModel {
+    
+    public var nutriscore = Nutriscore.a
+    public var name = Nutriscore.name
+    public var submodels: [NutriscoreLetterViewModel] = []
+
+    init(nutriscore: Nutriscore) {
+        self.nutriscore = nutriscore
+        submodels.append(NutriscoreLetterViewModel(nutriscore: .a, letterPresentation: letterPresentation))
+        submodels.append(NutriscoreLetterViewModel(nutriscore: .b, letterPresentation: letterPresentation))
+        submodels.append(NutriscoreLetterViewModel(nutriscore: .c, letterPresentation: letterPresentation))
+        submodels.append(NutriscoreLetterViewModel(nutriscore: .d, letterPresentation: letterPresentation))
+        submodels.append(NutriscoreLetterViewModel(nutriscore: .e, letterPresentation: letterPresentation))
+    }
+    
+    var letterPresentation: LetterPresentation {
+        switch nutriscore {
+        case .a, .b, .c, .d, .e:
+            return .color
+        case .exempt, .unknown:
+            return .blackwhite
+        }
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

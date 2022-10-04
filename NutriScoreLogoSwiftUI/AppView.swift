@@ -20,7 +20,7 @@ struct AppView: View {
             NutriscoreView(model: NutriscoreViewModel(nutriscore: .c))
             NutriscoreView(model: NutriscoreViewModel(nutriscore: .d))
             NutriscoreView(model: NutriscoreViewModel(nutriscore: .e))
-            NutriscoreView(model: NutriscoreViewModel(nutriscore: .exempt))
+            NutriscoreView(model: NutriscoreViewModel(nutriscore: .neutral))
             NutriscoreView(model: NutriscoreViewModel(nutriscore: .unknown))
         }
     }

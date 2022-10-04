@@ -11,12 +11,12 @@ import Foundation
  Enumerator, which describes all possible Nutriscore values.
  
  * Values:
-    * .a: shows the Nutriscore logo with the A highlighted
-    - .b: shows the Nutriscore logo with the B highlighted
-    - .c: shows the Nutriscore logo with the C highlighted
-    - .d: shows the Nutriscore logo with the D highlighted
-    - .e: shows the Nutriscore logo with the E highlighted
-    - .exempt: shows a gray Nutriscore logo with no letters highlighted and a black cross through the logo
+    * .a: shows the Nutri-score logo with the A highlighted
+    - .b: shows the Nutri-score logo with the B highlighted
+    - .c: shows the Nutri-score logo with the C highlighted
+    - .d: shows the Nutri-score logo with the D highlighted
+    - .e: shows the Nutri-score logo with the E highlighted
+    - .neutral: shows a gray Nutriscore logo with no letters highlighted and a black cross through the logo. To be used for products where the Nutri-score is not applicable;
     - .unknown: shows a gray Nutriscore logo with no letters highlighted
  */
 enum Nutriscore {
@@ -25,7 +25,7 @@ enum Nutriscore {
     case c
     case d
     case e
-    case exempt
+    case neutral
     case unknown
     
 /**
@@ -43,11 +43,11 @@ Computed variable that returns a letter in latin script corresponding to the Nut
     }
     
 /**
-Computed variable that returns a boolean whether a valid nutriscore exist.
+Computed variable that returns a boolean whether a valid Nutri-Score exist (A,B,C,D,E).
  
  - Values:
-    - true: for Nutriscore values a, b, c, d and e
-    - false: for Nutriscore values exempt and unknown
+    - true: for Nutri-Score values a, b, c, d and e
+    - false: for Nutri-Score values exempt and unknown
 */
     public var validScore: Bool {
         switch self {
@@ -60,7 +60,7 @@ Computed variable that returns a boolean whether a valid nutriscore exist.
     
     
 /**
-Static variable that returns the official name for the Nutriscore in latin script.
+Static variable that returns the official name for the Nutri-Score in latin script.
 */
     public static var name: String {
         return "NUTRI-SCORE"

@@ -12,10 +12,7 @@
 		AB5A40BE28DF006600493A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5A40BD28DF006600493A26 /* Assets.xcassets */; };
 		AB5A40C128DF006600493A26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5A40C028DF006600493A26 /* Preview Assets.xcassets */; };
 		AB5A40C828DF379100493A26 /* Nutriscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40C728DF379100493A26 /* Nutriscore.swift */; };
-		AB5A40CA28DF4C5800493A26 /* NutriscoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */; };
 		AB5A40CC28DF4D3800493A26 /* NutriscoreLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */; };
-		AB5A40CE28DF4DD200493A26 /* NutriscoreLetterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */; };
-		AB6302CC28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */; };
 		ABFF314D28E074DD00B6F79E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF314C28E074DD00B6F79E /* AppView.swift */; };
 		ABFF314F28E09E3A00B6F79E /* CrossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF314E28E09E3A00B6F79E /* CrossView.swift */; };
 /* End PBXBuildFile section */
@@ -28,10 +25,7 @@
 		AB5A40BD28DF006600493A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB5A40C028DF006600493A26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB5A40C728DF379100493A26 /* Nutriscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutriscore.swift; sourceTree = "<group>"; };
-		AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreViewModel.swift; sourceTree = "<group>"; };
 		AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreLetterView.swift; sourceTree = "<group>"; };
-		AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreLetterViewModel.swift; sourceTree = "<group>"; };
-		AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreSelectedLetterView.swift; sourceTree = "<group>"; };
 		ABFF314C28E074DD00B6F79E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		ABFF314E28E09E3A00B6F79E /* CrossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,12 +63,9 @@
 			children = (
 				AB5A40B928DF006500493A26 /* NutriScoreLogo2App.swift */,
 				ABFF314C28E074DD00B6F79E /* AppView.swift */,
-				AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */,
 				AB5A40BB28DF006500493A26 /* NutriscoreView.swift */,
 				ABFF314E28E09E3A00B6F79E /* CrossView.swift */,
-				AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */,
 				AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */,
-				AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */,
 				AB5A40C728DF379100493A26 /* Nutriscore.swift */,
 				AB5A40BD28DF006600493A26 /* Assets.xcassets */,
 				AB5A40BF28DF006600493A26 /* Preview Content */,
@@ -161,12 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABFF314F28E09E3A00B6F79E /* CrossView.swift in Sources */,
-				AB5A40CE28DF4DD200493A26 /* NutriscoreLetterViewModel.swift in Sources */,
 				AB5A40CC28DF4D3800493A26 /* NutriscoreLetterView.swift in Sources */,
-				AB5A40CA28DF4C5800493A26 /* NutriscoreViewModel.swift in Sources */,
 				AB5A40C828DF379100493A26 /* Nutriscore.swift in Sources */,
 				ABFF314D28E074DD00B6F79E /* AppView.swift in Sources */,
-				AB6302CC28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift in Sources */,
 				AB5A40BC28DF006500493A26 /* NutriscoreView.swift in Sources */,
 				AB5A40BA28DF006500493A26 /* NutriScoreLogo2App.swift in Sources */,
 			);
