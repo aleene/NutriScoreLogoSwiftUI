@@ -1,6 +1,6 @@
 //
-//  NutriScoreLogo2App.swift
-//  NutriScoreLogo2
+//  NutriScoreLogoSwiftUIApp.swift
+//  NutriScoreLogoSwiftUI
 //
 //  Created by Arnaud Leene on 24/09/2022.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct NutriScoreLogo2App: App {
+struct NutriScoreLogoSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

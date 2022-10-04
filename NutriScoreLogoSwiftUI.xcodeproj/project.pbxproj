@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		AB5A40BA28DF006500493A26 /* NutriScoreLogo2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40B928DF006500493A26 /* NutriScoreLogo2App.swift */; };
-		AB5A40BC28DF006500493A26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40BB28DF006500493A26 /* ContentView.swift */; };
+		AB5A40BC28DF006500493A26 /* NutriscoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40BB28DF006500493A26 /* NutriscoreView.swift */; };
 		AB5A40BE28DF006600493A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5A40BD28DF006600493A26 /* Assets.xcassets */; };
 		AB5A40C128DF006600493A26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5A40C028DF006600493A26 /* Preview Assets.xcassets */; };
+		AB5A40C828DF379100493A26 /* Nutriscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40C728DF379100493A26 /* Nutriscore.swift */; };
+		AB5A40CA28DF4C5800493A26 /* NutriscoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */; };
+		AB5A40CC28DF4D3800493A26 /* NutriscoreLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */; };
+		AB5A40CE28DF4DD200493A26 /* NutriscoreLetterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */; };
+		AB6302CC28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */; };
+		ABFF314D28E074DD00B6F79E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF314C28E074DD00B6F79E /* AppView.swift */; };
+		ABFF314F28E09E3A00B6F79E /* CrossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF314E28E09E3A00B6F79E /* CrossView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB5A40B628DF006500493A26 /* NutriScoreLogo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScoreLogo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB05130F28EB476700EBA496 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		AB5A40B628DF006500493A26 /* NutriScoreLogoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScoreLogoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5A40B928DF006500493A26 /* NutriScoreLogo2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScoreLogo2App.swift; sourceTree = "<group>"; };
-		AB5A40BB28DF006500493A26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB5A40BB28DF006500493A26 /* NutriscoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreView.swift; sourceTree = "<group>"; };
 		AB5A40BD28DF006600493A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB5A40C028DF006600493A26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB5A40C728DF379100493A26 /* Nutriscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutriscore.swift; sourceTree = "<group>"; };
+		AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreViewModel.swift; sourceTree = "<group>"; };
+		AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreLetterView.swift; sourceTree = "<group>"; };
+		AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreLetterViewModel.swift; sourceTree = "<group>"; };
+		AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreSelectedLetterView.swift; sourceTree = "<group>"; };
+		ABFF314C28E074DD00B6F79E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		ABFF314E28E09E3A00B6F79E /* CrossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +50,8 @@
 		AB5A40AD28DF006500493A26 = {
 			isa = PBXGroup;
 			children = (
-				AB5A40B828DF006500493A26 /* NutriScoreLogo2 */,
+				AB05130F28EB476700EBA496 /* README.md */,
+				AB5A40B828DF006500493A26 /* NutriScoreLogoSwiftUI */,
 				AB5A40B728DF006500493A26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +59,27 @@
 		AB5A40B728DF006500493A26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB5A40B628DF006500493A26 /* NutriScoreLogo2.app */,
+				AB5A40B628DF006500493A26 /* NutriScoreLogoSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB5A40B828DF006500493A26 /* NutriScoreLogo2 */ = {
+		AB5A40B828DF006500493A26 /* NutriScoreLogoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				AB5A40B928DF006500493A26 /* NutriScoreLogo2App.swift */,
-				AB5A40BB28DF006500493A26 /* ContentView.swift */,
+				ABFF314C28E074DD00B6F79E /* AppView.swift */,
+				AB5A40C928DF4C5800493A26 /* NutriscoreViewModel.swift */,
+				AB5A40BB28DF006500493A26 /* NutriscoreView.swift */,
+				ABFF314E28E09E3A00B6F79E /* CrossView.swift */,
+				AB5A40CD28DF4DD200493A26 /* NutriscoreLetterViewModel.swift */,
+				AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */,
+				AB6302CB28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift */,
+				AB5A40C728DF379100493A26 /* Nutriscore.swift */,
 				AB5A40BD28DF006600493A26 /* Assets.xcassets */,
 				AB5A40BF28DF006600493A26 /* Preview Content */,
 			);
-			path = NutriScoreLogo2;
+			path = NutriScoreLogoSwiftUI;
 			sourceTree = "<group>";
 		};
 		AB5A40BF28DF006600493A26 /* Preview Content */ = {
@@ -70,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB5A40B528DF006500493A26 /* NutriScoreLogo2 */ = {
+		AB5A40B528DF006500493A26 /* NutriScoreLogoSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB5A40C428DF006600493A26 /* Build configuration list for PBXNativeTarget "NutriScoreLogo2" */;
+			buildConfigurationList = AB5A40C428DF006600493A26 /* Build configuration list for PBXNativeTarget "NutriScoreLogoSwiftUI" */;
 			buildPhases = (
 				AB5A40B228DF006500493A26 /* Sources */,
 				AB5A40B328DF006500493A26 /* Frameworks */,
@@ -82,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = NutriScoreLogo2;
+			name = NutriScoreLogoSwiftUI;
 			productName = NutriScoreLogo2;
-			productReference = AB5A40B628DF006500493A26 /* NutriScoreLogo2.app */;
+			productReference = AB5A40B628DF006500493A26 /* NutriScoreLogoSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB5A40B128DF006500493A26 /* Build configuration list for PBXProject "NutriScoreLogo2" */;
+			buildConfigurationList = AB5A40B128DF006500493A26 /* Build configuration list for PBXProject "NutriScoreLogoSwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB5A40B528DF006500493A26 /* NutriScoreLogo2 */,
+				AB5A40B528DF006500493A26 /* NutriScoreLogoSwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5A40BC28DF006500493A26 /* ContentView.swift in Sources */,
+				ABFF314F28E09E3A00B6F79E /* CrossView.swift in Sources */,
+				AB5A40CE28DF4DD200493A26 /* NutriscoreLetterViewModel.swift in Sources */,
+				AB5A40CC28DF4D3800493A26 /* NutriscoreLetterView.swift in Sources */,
+				AB5A40CA28DF4C5800493A26 /* NutriscoreViewModel.swift in Sources */,
+				AB5A40C828DF379100493A26 /* Nutriscore.swift in Sources */,
+				ABFF314D28E074DD00B6F79E /* AppView.swift in Sources */,
+				AB6302CC28DF64BB0052DE4C /* NutriscoreSelectedLetterView.swift in Sources */,
+				AB5A40BC28DF006500493A26 /* NutriscoreView.swift in Sources */,
 				AB5A40BA28DF006500493A26 /* NutriScoreLogo2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NutriScoreLogo2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NutriScoreLogoSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -275,13 +305,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.NutriScoreLogo2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.NutriScoreLogoSwiftUI;
+				PRODUCT_NAME = NutriScoreLogoSwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NutriScoreLogo2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NutriScoreLogoSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,13 +335,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.NutriScoreLogo2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.NutriScoreLogoSwiftUI;
+				PRODUCT_NAME = NutriScoreLogoSwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB5A40B128DF006500493A26 /* Build configuration list for PBXProject "NutriScoreLogo2" */ = {
+		AB5A40B128DF006500493A26 /* Build configuration list for PBXProject "NutriScoreLogoSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB5A40C228DF006600493A26 /* Debug */,
@@ -329,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB5A40C428DF006600493A26 /* Build configuration list for PBXNativeTarget "NutriScoreLogo2" */ = {
+		AB5A40C428DF006600493A26 /* Build configuration list for PBXNativeTarget "NutriScoreLogoSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB5A40C528DF006600493A26 /* Debug */,
