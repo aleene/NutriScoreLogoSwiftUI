@@ -9,22 +9,26 @@ import SwiftUI
 
 struct NutriscoreView: View {
     
+    /// The ViewModel corresponding to the NutriscoreView
     public var model = NutriscoreViewModel(nutriscore: .a)
     
     var body: some View {
-        VStack(alignment: .leading, spacing: -2.0) {
+        VStack(alignment: .leading, spacing: -1.0) {
             Text(model.name)
-                .font(.subheadline)
+                .font(.system(size: 14.0))
                 .fontWeight(.bold)
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color("NutriscoreText"))
                 .multilineTextAlignment(.leading)
+                .padding(.leading, 10.0)
             if model.submodels.count == 5 {
                 ZStack {
+                    // It seems that the letters of non-selected values are shifted next to a selected letter for better visibility.
+                    // This is not implemented
                     HStack(spacing: 0.0) {
                         ZStack {
                             Rectangle()
                                 .padding(.leading, 15.0)
-                                .frame(width: 29.0, height: 49)
+                                .frame(width: 29.0, height: 45)
                                 .zIndex(0.0)
                                 .foregroundColor(model.submodels.first!.validBackground)
                             NutriscoreLetterView(model: model.submodels.first!)
@@ -40,15 +44,11 @@ struct NutriscoreView: View {
                                 .cornerRadius(12)
                             Rectangle()
                                 .padding(.trailing, 15.0)
-                                .frame(width: 29.0, height: 49)
+                                .frame(width: 29.0, height: 45)
                                 .zIndex(0.0)
                                 .foregroundColor(model.submodels.last!.validBackground)
                         }
                     }
-                    .overlay(
-                        CrossShape()
-                            .stroke(model.nutriscore == .unknown ? .black : .clear, lineWidth: 2.0)
-                    )
                     
                     // only draw the selected nutriscore if there is a valid nutriscore
                     if model.nutriscore.validScore {
@@ -94,9 +94,9 @@ class NutriscoreViewModel {
     
     var letterPresentation: LetterPresentation {
         switch nutriscore {
-        case .a, .b, .c, .d, .e:
+        case .a, .b, .c, .d, .e, .neutral:
             return .color
-        case .exempt, .unknown:
+        case  .unknown:
             return .blackwhite
         }
     }
