@@ -9,6 +9,22 @@ import SwiftUI
 
 struct NutriscoreView: View {
     
+    /// Values that are used in multiple locations
+    private struct Constants {
+        static let CornerRadius = 12.0
+        struct ValidScore {
+            static let Trailing = 56.0
+        }
+        struct EdgeLetter {
+            struct Frame {
+                static let Width = 29.0
+                static let Height = 45.0
+            }
+            struct Padding  {
+                static let Leading = 15.0
+            }
+        }
+    }
     /// The ViewModel corresponding to the NutriscoreView
     public var model = NutriscoreViewModel(nutriscore: .a)
     
@@ -23,17 +39,17 @@ struct NutriscoreView: View {
             if model.submodels.count == 5 {
                 ZStack {
                     // It seems that the letters of non-selected values are shifted next to a selected letter for better visibility.
-                    // This is not implemented
+                    // This is not implemented.
                     HStack(spacing: 0.0) {
                         ZStack {
                             Rectangle()
-                                .padding(.leading, 15.0)
-                                .frame(width: 29.0, height: 45)
+                                .padding(.leading, Constants.EdgeLetter.Padding.Leading)
+                                .frame(width: Constants.EdgeLetter.Frame.Width, height: Constants.EdgeLetter.Frame.Height)
                                 .zIndex(0.0)
                                 .foregroundColor(model.submodels.first!.validBackground)
                             NutriscoreLetterView(model: model.submodels.first!)
                                 .zIndex(1.0)
-                                .cornerRadius(12)
+                                .cornerRadius(Constants.CornerRadius)
                         }
                         NutriscoreLetterView(model: model.submodels[1])
                         NutriscoreLetterView(model: model.submodels[2])
@@ -41,10 +57,10 @@ struct NutriscoreView: View {
                         ZStack {
                             NutriscoreLetterView(model: model.submodels.last!)
                                 .zIndex(1.0)
-                                .cornerRadius(12)
+                                .cornerRadius(Constants.CornerRadius)
                             Rectangle()
-                                .padding(.trailing, 15.0)
-                                .frame(width: 29.0, height: 45)
+                                .padding(.trailing, Constants.EdgeLetter.Padding.Leading)
+                                .frame(width: Constants.EdgeLetter.Frame.Width, height: Constants.EdgeLetter.Frame.Height)
                                 .zIndex(0.0)
                                 .foregroundColor(model.submodels.last!.validBackground)
                         }
@@ -54,20 +70,20 @@ struct NutriscoreView: View {
                     if model.nutriscore.validScore {
                         HStack(spacing: -4.0) {
                             if model.nutriscore == .a {
-                                NutriscoreSelectedLetterView(model: model.submodels.first!)
-                                    .padding(.trailing, 2 * 56.0)
+                                NutriscoreSelectedLetterView(model: model.submodels[0])
+                                    .padding(.trailing, 2 * Constants.ValidScore.Trailing)
                             } else if model.nutriscore == .b {
                                 NutriscoreSelectedLetterView(model: model.submodels[1])
-                                    .padding(.trailing, 56.0)
+                                    .padding(.trailing, Constants.ValidScore.Trailing)
                             } else if model.nutriscore == .c {
                                 NutriscoreSelectedLetterView(model: model.submodels[2])
                                 
                             } else if model.nutriscore == .d {
                                 NutriscoreSelectedLetterView(model: model.submodels[3])
-                                    .padding(.leading, 56.0)
+                                    .padding(.leading, Constants.ValidScore.Trailing)
                             } else if model.nutriscore == .e {
-                                NutriscoreSelectedLetterView(model: model.submodels.last!)
-                                    .padding(.leading, 2 * 56.0)
+                                NutriscoreSelectedLetterView(model: model.submodels[4])
+                                    .padding(.leading, 2 * Constants.ValidScore.Trailing)
                             }
                         }
                     }

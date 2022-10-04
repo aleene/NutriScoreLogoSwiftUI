@@ -15,7 +15,7 @@ struct NutriscoreLetterView: View {
     /// The ViewModel of type NutriscoreLetterViewModel to be used for this view.
     public var model = NutriscoreLetterViewModel(nutriscore: .a, letterPresentation: .color)
 
-    // A letter rectangle has an height/width ratio of 1.6 (cf. 134 x 212).
+    // A letter rectangle has an height/width ratio of 1.6.
     // A system font **title** with weight **heavy** ressembles the logo best
     var body: some View {
         Text(model.letter)
@@ -30,7 +30,6 @@ struct NutriscoreLetterView: View {
             .foregroundColor(model.foregroundcolor)
     }
 }
-
 
 /**
  A SwiftUI view that paints a selected Nutriscore letter with the correct size and the correct color and background color.
@@ -61,6 +60,7 @@ struct NutriscoreSelectedLetterView: View {
     }
 }
 
+/// The way the logo should be represented, in color, or gray
 public enum LetterPresentation {
     case color
     case blackwhite

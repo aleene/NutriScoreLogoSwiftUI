@@ -26,7 +26,6 @@
 		AB5A40C728DF379100493A26 /* Nutriscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutriscore.swift; sourceTree = "<group>"; };
 		AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriscoreLetterView.swift; sourceTree = "<group>"; };
 		ABFF314C28E074DD00B6F79E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		ABFF314E28E09E3A00B6F79E /* CrossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +62,6 @@
 				AB5A40B928DF006500493A26 /* NutriScoreLogo2App.swift */,
 				ABFF314C28E074DD00B6F79E /* AppView.swift */,
 				AB5A40BB28DF006500493A26 /* NutriscoreView.swift */,
-				ABFF314E28E09E3A00B6F79E /* CrossView.swift */,
 				AB5A40CB28DF4D3800493A26 /* NutriscoreLetterView.swift */,
 				AB5A40C728DF379100493A26 /* Nutriscore.swift */,
 				AB5A40BD28DF006600493A26 /* Assets.xcassets */,
